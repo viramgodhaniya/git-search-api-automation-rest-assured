@@ -1,0 +1,621 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1336253300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "validate total number of repositories for given programming language created before 01st January 2011",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-programming-language-created-before-01st-january-2011;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2004289000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform GET operation to validate total no of repo created before \"2011-01-01\" for given programming language \u0027language:java\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2011-01-01\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\u0027language:java\u0027",
+                  "offset": 112
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_created_before_for_given_programming_language(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 392306100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see the total count 16970 in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "16970",
+                  "offset": 29
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5857500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "validate total number of repositories for given programming language created before 01st January 2011",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-programming-language-created-before-01st-january-2011;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1463897200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform GET operation to validate total no of repo created before \"2011-01-01\" for given programming language \u0027language:c\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2011-01-01\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\u0027language:c\u0027",
+                  "offset": 112
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_created_before_for_given_programming_language(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50631500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see the total count 13530 in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "13530",
+                  "offset": 29
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8652000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "validate total number of repositories for given organisation and programming language with sort and order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-organisation-and-programming-language-with-sort-and-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 422985700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I perform GET operation to validate total no of repo of \u0027org:workday\u0027 for \u0027language:java\u0027 with \u0027star\u0027 and \u0027desc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027org:workday\u0027",
+                  "offset": 56
+                },
+                {
+                  "val": "\u0027language:java\u0027",
+                  "offset": 74
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 95
+                },
+                {
+                  "val": "\u0027desc\u0027",
+                  "offset": 106
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_of_for_with_and(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13658200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the total count 6 in response sorted by \u0027star\u0027 and order by \u0027desc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 53
+                },
+                {
+                  "val": "\u0027desc\u0027",
+                  "offset": 73
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response_sorted_by_and_order_by(Integer,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5951700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "validate total number of repositories for given organisation and programming language with sort and order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-organisation-and-programming-language-with-sort-and-order;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 411864300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I perform GET operation to validate total no of repo of \u0027org:github\u0027 for \u0027language:java\u0027 with \u0027star\u0027 and \u0027desc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027org:github\u0027",
+                  "offset": 56
+                },
+                {
+                  "val": "\u0027language:java\u0027",
+                  "offset": 73
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 94
+                },
+                {
+                  "val": "\u0027desc\u0027",
+                  "offset": 105
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_of_for_with_and(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8817200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the total count 4 in response sorted by \u0027star\u0027 and order by \u0027desc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 53
+                },
+                {
+                  "val": "\u0027desc\u0027",
+                  "offset": 73
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response_sorted_by_and_order_by(Integer,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5961500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "validate total number of repositories for given user with sort by fork and in ascending order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-user-with-sort-by-fork-and-in-ascending-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 883022200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I perform GET operation to validate total no of repo of \u0027user:deepak\u0027 with \u0027fork\u0027 and \u0027aesc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027user:deepak\u0027",
+                  "offset": 56
+                },
+                {
+                  "val": "\u0027fork\u0027",
+                  "offset": 75
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 86
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_of_with_and(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14488100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see the total count 45 in response sorted by \u0027fork\u0027 and order by \u0027aesc\u0027 for given users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027fork\u0027",
+                  "offset": 54
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 74
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response_sorted_by_and_order_by_for_given_users(Integer,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6540300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "validate total number of repositories for given user with sort by fork and in ascending order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-total-number-of-repositories-for-given-user-with-sort-by-fork-and-in-ascending-order;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 781066900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I perform GET operation to validate total no of repo of \u0027user:john\u0027 with \u0027star\u0027 and \u0027aesc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027user:john\u0027",
+                  "offset": 56
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 73
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 84
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_of_with_and(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18747500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see the total count 24 in response sorted by \u0027star\u0027 and order by \u0027aesc\u0027 for given users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 54
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 74
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_total_count_in_response_sorted_by_and_order_by_for_given_users(Integer,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5314800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "validate 1st repositories for given user with sort by fork and in ascending order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-1st-repositories-for-given-user-with-sort-by-fork-and-in-ascending-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 825615000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I perform GET operation to validate total no of repo of \u0027user:deepak\u0027 with \u0027star\u0027 and \u0027aesc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027user:deepak\u0027",
+                  "offset": 56
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 75
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 86
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_total_no_of_repo_of_with_and(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12071400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see the repo name \u0027chef_cookbooks\u0027 in response sorted by \u0027star\u0027 and order by \u0027aesc\u0027 for given users",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027chef_cookbooks\u0027",
+                  "offset": 27
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 66
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 86
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_the_repo_name_in_response_sorted_by_and_order_by_for_given_users(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9061500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "validate that all the fetched repositories for given organisation and language is public according to query param sorted by star and in ascending order",
+        "description": "",
+        "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-;validate-that-all-the-fetched-repositories-for-given-organisation-and-language-is-public-according-to-query-param-sorted-by-star-and-in-ascending-order;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 467739000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I perform GET operation to validate public repo of \u0027org:github\u0027s \u0027language:java\u0027 with \u0027star\u0027 and \u0027aesc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027org:github\u0027",
+                  "offset": 51
+                },
+                {
+                  "val": "\u0027language:java\u0027",
+                  "offset": 65
+                },
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 86
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 97
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_perform_GET_operation_to_validate_public_repo_of_s_with_and(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9594700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I should see all the public repo and sorted by \u0027star\u0027 and order by \u0027aesc\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027star\u0027",
+                  "offset": 47
+                },
+                {
+                  "val": "\u0027aesc\u0027",
+                  "offset": 67
+                }
+              ],
+              "location": "GitSearchTestStepDef.i_should_see_all_the_public_repo_and_sorted_by_and_order_by(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchByKeyword"
+          }
+        ]
+      }
+    ],
+    "name": "To verify functionality and behaviour of GitHub search API based on series of keywords,",
+    "description": "  as well as ordering and sorting of the returned results.",
+    "id": "to-verify-functionality-and-behaviour-of-github-search-api-based-on-series-of-keywords-",
+    "keyword": "Feature",
+    "uri": "src/test/features/GitSearchApiTest.feature",
+    "tags": []
+  }
+]

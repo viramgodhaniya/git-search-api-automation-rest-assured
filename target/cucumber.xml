@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="9.17434">
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given programming language created before 01st January 2011" time="3.737651">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo created before "2011-01-01" for given programming language 'language:java'.passed
+Then I should see the total count 16970 in response.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given programming language created before 01st January 2011 2" time="1.520987">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo created before "2011-01-01" for given programming language 'language:c'.passed
+Then I should see the total count 13530 in response.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given organisation and programming language with sort and order" time="0.446595">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo of 'org:workday' for 'language:java' with 'star' and 'desc'.passed
+Then I should see the total count 6 in response sorted by 'star' and order by 'desc'.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given organisation and programming language with sort and order 2" time="0.427378">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo of 'org:github' for 'language:java' with 'star' and 'desc'.passed
+Then I should see the total count 4 in response sorted by 'star' and order by 'desc'.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given user with sort by fork and in ascending order" time="0.904176">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo of 'user:deepak' with 'fork' and 'aesc'.passed
+Then I should see the total count 45 in response sorted by 'fork' and order by 'aesc' for given users.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate total number of repositories for given user with sort by fork and in ascending order 2" time="0.806883">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo of 'user:john' with 'star' and 'aesc'.passed
+Then I should see the total count 24 in response sorted by 'star' and order by 'aesc' for given users.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate 1st repositories for given user with sort by fork and in ascending order" time="0.843702">
+        <system-out><![CDATA[Given I perform GET operation to validate total no of repo of 'user:deepak' with 'star' and 'aesc'.passed
+Then I should see the repo name 'chef_cookbooks' in response sorted by 'star' and order by 'aesc' for given users.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To verify functionality and behaviour of GitHub search API based on series of keywords," name="validate that all the fetched repositories for given organisation and language is public according to query param sorted by star and in ascending order" time="0.486968">
+        <system-out><![CDATA[Given I perform GET operation to validate public repo of 'org:github's 'language:java' with 'star' and 'aesc'.passed
+Then I should see all the public repo and sorted by 'star' and order by 'aesc'.passed
+]]></system-out>
+    </testcase>
+</testsuite>
