@@ -58,7 +58,6 @@ public class RestAssuredExtension {
 
     public static ResponseOptions<Response> GetWithQueryParams(String url,Map<String, String> qParams) {
         Request.queryParams(qParams);
-            //return Request.urlEncodingEnabled(false).get(url);
             return Request.get(url);
  }
 

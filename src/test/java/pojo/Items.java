@@ -1,7 +1,5 @@
 package pojo;
 
-//import io.cucumber.datatable.dependency.com.fasterxml.jackson.annotation.JsonIgnore;
-//import io.cucumber.datatable.dependency.com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

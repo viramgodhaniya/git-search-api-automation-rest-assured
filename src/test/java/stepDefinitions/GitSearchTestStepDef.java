@@ -19,7 +19,7 @@ public class GitSearchTestStepDef {
     private static final String createdAfterEncoded = "created:%3E";
     public static ResponseOptions<Response> response;
     public static List<String> multipleQueryParam = new ArrayList<String>();
-    //public static List<Items> itemsList;
+    public static List<Items> itemsList;
     public static List<Integer> watchersCounts;
     public static List<Integer> forkCount;
     public static List<Boolean> isPrivate;
@@ -27,8 +27,7 @@ public class GitSearchTestStepDef {
     @Then("I should see the total count {int} in response sorted by {string} and order by {string}")
     public void i_should_see_the_total_count_in_response_sorted_by_and_order_by(Integer totalCount, String sort, String order) {
         var repoCountInfo = response.getBody().as(RepoCountInfo.class);
-        //System.out.println(response.getBody().prettyPrint());
-        List<Items> itemsList = repoCountInfo.getItems();
+        itemsList = repoCountInfo.getItems();
         watchersCounts = new ArrayList<>();
         itemsList.forEach(item->{
             watchersCounts.add(item.getWatchers_count());
@@ -65,7 +64,7 @@ public class GitSearchTestStepDef {
     @Then("I should see the total count {int} in response sorted by {string} and order by {string} for given users")
     public void i_should_see_the_total_count_in_response_sorted_by_and_order_by_for_given_users(Integer totalCount, String sort, String order) {
         var repoCountInfo = response.getBody().as(RepoCountInfo.class);
-        List<Items> itemsList = repoCountInfo.getItems();
+        itemsList = repoCountInfo.getItems();
         forkCount = new ArrayList<>();
         itemsList.forEach(item->{
             forkCount.add(item.getWatchers_count());
@@ -78,7 +77,6 @@ public class GitSearchTestStepDef {
     @Then("I should see the repo name {string} in response sorted by {string} and order by {string} for given users")
     public void i_should_see_the_repo_name_in_response_sorted_by_and_order_by_for_given_users(String repoName, String sort, String order) {
         var repoCountInfo = response.getBody().as(RepoCountInfo.class);
-        List<Items> itemsList = repoCountInfo.getItems();
         assertThat(repoCountInfo.getItems().get(0).getName(),equalTo(repoName));
     }
 
@@ -92,7 +90,7 @@ public class GitSearchTestStepDef {
     public void i_should_see_all_the_public_repo_and_sorted_by_and_order_by(String string, String string2) {
         var repoCountInfo = response.getBody().as(RepoCountInfo.class);
         boolean found = false;
-        List<Items> itemsList = repoCountInfo.getItems();
+        itemsList = repoCountInfo.getItems();
         watchersCounts = new ArrayList<>();
         isPrivate = new ArrayList<>();
         itemsList.forEach(item->{
