@@ -42,7 +42,7 @@ formatter.examples({
     {
       "cells": [
         "language:c",
-        "13530"
+        "13531"
       ]
     }
   ]
@@ -104,7 +104,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should see the total count 13530 in response",
+  "name": "I should see the total count 13531 in response",
   "keyword": "Then "
 });
 formatter.match({

@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features = "src/test/features",
         glue = {"stepDefinitions"},
-        plugin = {"pretty", "json:target/reportG.json",
+        plugin = {"pretty", "json:target/cucumber-jvm-report/reportG.json",
                 "html:target/cucumber-html-report",
                 "junit:target/cucumber.xml"}
 )

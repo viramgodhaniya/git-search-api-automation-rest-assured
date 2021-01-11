@@ -8,7 +8,7 @@ Feature: To verify functionality and behaviour of GitHub search API based on ser
     Examples:
       | language          |  totalCount   |
       | language:java     |   16970       |
-      | language:c        |   13530       |
+      | language:c        |   13531       |
 
   @searchByKeyword
   Scenario Outline: validate total number of repositories for given organisation and programming language with sort and order

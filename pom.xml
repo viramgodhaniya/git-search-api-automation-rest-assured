@@ -86,21 +86,48 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
+                <configuration>
+                    <includes>
+                        <include>**/GitSearchTestRunner.java</include>
+                    </includes>
+                    <!-- <excludes> <exclude>**/*RunCukesTest.java</exclude> </excludes> -->
+                </configuration>
+                <!-- <dependencies> <dependency> <groupId>org.apache.maven.surefire</groupId>
+                    <artifactId>surefire-junit</artifactId> <version>2.6</version> </dependency>
+                    </dependencies> -->
+            </plugin>
+            <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>2.8.0</version>
+                <version>5.0.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>verify</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
                             <projectName>GitSearchApiAutomation</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            <!-- output directory for the generated report -->
+                            <outputDirectory>${project.build.directory}/cucumber-jvm-report</outputDirectory>
+                            <!-- optional, defaults to outputDirectory if not specified -->
+                            <inputDirectory>${project.build.directory}/</inputDirectory>
                             <skippedFails>true</skippedFails>
+                            <jsonFiles>
+                                <!-- supports wildcard or name pattern -->
+                                <param>**/*.json</param>
+                            </jsonFiles>
+                            <!-- optional, defaults to outputDirectory if not specified -->
+                            <classificationDirectory>${project.build.directory}/</classificationDirectory>
+                            <classificationFiles>
+                                <!-- supports wildcard or name pattern -->
+                                <param>sample.properties</param>
+                                <param>other.properties</param>
+                            </classificationFiles>
                         </configuration>
                     </execution>
                 </executions>
